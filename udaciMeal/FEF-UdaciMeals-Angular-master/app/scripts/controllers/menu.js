@@ -8,15 +8,9 @@
  * Controller of the udaciMealsAngularApp
  */
 angular.module('udaciMealsAngularApp')
-  .controller('MenuCtrl', function (foodFinder, orderManager) {
-    var _this = this;
-    foodFinder.getMenu().then(
-      function(data) {
-	_this.items = data;
-      }
-    );
-
-    this.chooseItem = function(menuCategory, menuItemName) {
-      orderManager.chooseMenuOption(menuCategory, menuItemName);
-    };
+  .controller('MenuCtrl', function () {
+      this.id = 'strawberry-pudding';
+      this.name = 'Strawberry Pudding';
+      this.img = 'strawberry-pudding.jpg';
+      this.rating = 5;
   });

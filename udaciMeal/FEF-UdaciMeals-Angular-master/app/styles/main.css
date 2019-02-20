@@ -100,3 +100,8 @@ body {
     border-bottom: 0;
   }
 }
+
+
+.highlight {
+  color: green;
+}

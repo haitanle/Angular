@@ -4,10 +4,10 @@
  	<div class="items-container" ng-repeat="item in menu.items">
  		<div class="col-md-4">
  			<h4>{{item.name}}</h4>
- 			<p>Rating: {{item.rating}} <span ng-if="item.rating>4.0" ng-class="{highlight: item.rating > 6.0}"> - !People love this item!<span></p>
+ 			<p>Rating: {{item.rating}} <span ng-if="item.rating>4.0" ng-class="{'highlight': item.rating > 6.0}"> - !People love this item!<span></p>
  			<button ng-click="menu.increment(item)">+</button>
  			<button ng-click="menu.decrement(item)">-</button>
- 			
+
  			<img class="item_image" ng-src="images/{{item.img}}" alt="{{item.name}}">
  			<p>
  				<textarea ng-model="item.newReview" name="item.review" row="3

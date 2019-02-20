@@ -1,4 +1,4 @@
-// Generated on 2015-11-16 using generator-angular 0.14.0
+// Generated on 2016-01-24 using generator-angular 0.15.1
 'use strict';
 
 // # Globbing
@@ -70,10 +70,10 @@ module.exports = function (grunt) {
     // The actual grunt server settings
     connect: {
       options: {
-        port: 9003,
+        port: 9000,
         // Change this to '0.0.0.0' to access the server from outside.
         hostname: 'localhost',
-        livereload: 35725
+        livereload: 35729
       },
       livereload: {
         options: {
@@ -338,7 +338,7 @@ module.exports = function (grunt) {
     ngtemplates: {
       dist: {
         options: {
-          module: 'udaciMealsAngularApp',
+          module: 'serviceQuizApp',
           htmlmin: '<%= htmlmin.dist.options %>',
           usemin: 'scripts/scripts.js'
         },

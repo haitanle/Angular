@@ -10,6 +10,7 @@
 angular.module('routingQuizApp')
   .controller('GreenBricksCtrl', ['purchaseManager', function (manager) {
     this.name = 'Green Bricks';
+    this.color= 'green';
 
     this.bricks = {
       '2x4': {
@@ -23,6 +24,7 @@ angular.module('routingQuizApp')
     };
 
     this.addToCart = function(size, price) {
+      this.bricks[size].quantity--;
       manager.purchase('green', size, price);
     };
   }]);
